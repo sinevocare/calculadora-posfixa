@@ -1,3 +1,6 @@
+
+dotnet-install.sh
+
 bin/
 obj/
 .vscode/

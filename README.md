@@ -32,7 +32,7 @@
    1. forkar repositório
    1. desenvolver solução para os testes
    1. apresentar plano de teste e solução
-   
+
 ## Equipe
 
 - [Gustavo Guerino](https://github.com/gustavoguerino);
