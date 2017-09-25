@@ -20,6 +20,7 @@
       - equipe (lembrar de colocar link para o github dos membros)
       - tecnologia usada
       - plano de teste (definir se vai usar top-down ou bottom-up)
+      - implementar os testes unitários
       - como executar teste
    1. apresentar em sala o plano de teste
 - quinta-feira 28-09
