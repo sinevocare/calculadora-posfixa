@@ -9,7 +9,10 @@
 - Receber uma string contendo uma expressão matemática em [notação polonesa](https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa) e retornar o valor de resultado da expressão.
 
 - Exemplos
-"3 2 5 + *" => 21
+
+  ```csharp
+  "3 2 5 + *" => 21
+  ```
 
 - [Calculadora online](https://epxx.co/ctb/hp12c.html)
 
@@ -29,7 +32,7 @@
    1. forkar repositório
    1. desenvolver solução para os testes
    1. apresentar plano de teste e solução
-
+   
 ## Equipe
 
 - [Gustavo Guerino](https://github.com/gustavoguerino);
@@ -48,9 +51,9 @@
 | Entrada | Método | Condição        | Classes válidas  | Classes inválidas |
 |---------|--------|-----------------|------------------|-------------------|
 | exp | Eval, IsValid, Operands, Operators | typeof(exp)     | typeof(exp) = string | typeof(exp) &ne; string |
-|     | Eval | exp.IsValid()        | exp.IsValid() = true | exp.IsValid() &ne; true |
-|     | Eval | size(exp.Operands()) | size(exp.Operands()) = size(exp.Operators()) + 1 | size(exp.Operands()) &ne; size(exp.Operators()) + 1|
-|     | Eval | exp.Eval()           | exp.Eval() &isin; &reals; | exp.Eval() &notin; &reals; |
+|     | Eval | IsValid(exp)        | IsValid(exp) = true | IsValid(exp) &ne; true |
+|     | Eval | size(Operands(exp)) | size(Operands(exp)) = size(Operators(exp)) + 1 | size(Operands(exp)) &ne; size(Operators(exp)) + 1|
+|     | Eval | Eval(exp)           | Eval(exp) &isin; &reals; | Eval(exp) &notin; &reals; |
 
 ### Protótipos dos métodos
 
