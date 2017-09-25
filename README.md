@@ -5,7 +5,7 @@
 - Projetar testes uniários para uma terceira equipe implementar
 
 ## Problema
-- Receber uma string contendo uma expressão matemática em [notação polonesa](https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa) e retornar o valor de resultado da expressão.
+- Receber uma string contendo uma expressão matemática em [notação polonesa reversa](https://pt.wikipedia.org/wiki/Notação_polonesa_inversa) e retornar o valor de resultado da expressão.
 
 - Exemplos
 "3 2 5 + *" => 21
@@ -28,4 +28,10 @@
    1. forkar repositório
    1. desenvolver solução para os testes
    1. apresentar plano de teste e solução
-   
+
+## Preparação para o plano de teste
+   - equipe ( [Yuri Jordan](https://github.com/Yuri-Jordan), [Thomas Nogueira](https://github.com/Thomas-Nogueira) )
+      - Java 8 com JUnit Versão [4.x](http://junit.org/junit4), IDE Netbeans 8.2, SO Windows 10.
+      - plano de teste (bottom-up)
+      - implementar os testes unitários
+      - como executar teste
