@@ -5,7 +5,7 @@
 - Projetar testes uniários para uma terceira equipe implementar
 
 ## Problema
-- Receber uma string contendo uma expressão matemática em [notação polonesa](https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa) e retornar o valor de resultado da expressão.
+- Receber uma string contendo uma expressão matemática em [notação polonesa reversa](https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa_inversa) e retornar o valor de resultado da expressão.
 
 - Exemplos
 "3 2 5 + *" => 21
