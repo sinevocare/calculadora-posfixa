@@ -1,0 +1,7 @@
+
+class CalculadoraPosFixa {
+
+    public CalculadoraPosFixa() {
+    }
+    
+}
