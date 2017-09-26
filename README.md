@@ -79,6 +79,7 @@
 
 # Como executar os testes
    [Utilizando o JUnit na IDE Netbeans](https://netbeans.org/kb/docs/java/junit-intro_pt_BR.html)
+   
    [Utilizando o JUnit na IDE Eclipse](https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml)
 
 1. Crie um novo projeto Java com JUnit seguindo um dos tutoriais acima
