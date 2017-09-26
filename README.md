@@ -50,7 +50,7 @@
 |-----------|------------------------------------|----------------------------------|----------------------------------|
 | polonesa  | É do tipo string.                  |(1) expressao(polonesa) == String |(4) expressao(polonesa) != String |
 |           | Dentro da string cada elemento é um número(s) inteiro com caractere(s) usados em expressões matemáticas: + - * /          |(2) polonesa = "3 2 5 * +"        |(5) polonesa = "3 2 5 * + d -"    |
-|           | A operação matemática RPN opera de forma que: o(s) número(s) é(são) inseridos numa pilha, quando algum caractere de expressão númerica é inserido é calculado os dois últimos números, assim sucessivamente até que todos os números sejam calculados e retirada da pilha o resultado.               |(3) polonesa = "5 1 2 + 4 × + 3 −" calculando = 5 + (1 + 2) × 4 - 3 |(6) polonesa = "5 1 2 + 4 × + 3 −" calculando = 5 + 1 + 8 - 3 |
+|           | A operação matemática RPN opera de forma que: o(s) número(s) é(são) inseridos numa pilha, quando algum caractere de expressão númerica é inserido, é calculado os dois últimos números (ou os primeiros da pilha), assim sucessivamente até que todos os números sejam calculados e retirada da pilha o resultado.               |(3) polonesa = "5 1 2 + 4 × + 3 −" calculando = 5 + (1 + 2) × 4 - 3 |(6) polonesa = "5 1 2 + 4 × + 3 −" calculando = 5 + 1 + 8 - 3 |
 
 ### Casos de testes
 | Sequência   |               Entrada           |            Saída                |
