@@ -77,7 +77,17 @@
 |Resultado	14|
 
 
+# Como executar os testes
+   [Utilizando o JUnit na IDE Netbeans](https://netbeans.org/kb/docs/java/junit-intro_pt_BR.html)
+   [Utilizando o JUnit na IDE Eclipse](https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml)
 
+1. Crie um novo projeto Java com JUnit seguindo um dos tutoriais acima
+
+2. Adicione uma biblioteca JUnit V4.x, ao classpath dele
+
+3. Para poder testar é preciso fazer a classe de teste compilar. Então crie a classe "CalculadoraPosfixa" e implemente os casos de teste, o mais simples possível, até que passem.
+
+4. Como forma de ajuda, já existe uma implementação para os testes, porém melhore-a, refatorando etc...
 
 
 
