@@ -56,11 +56,11 @@
 | Sequência   |               Entrada           |            Saída                |
 |-------------|---------------------------------|---------------------------------|
 | 1 - válida  |      "5 1 2 + 4 × + 3 −"        |              14                 |
-| 1 - inválida|               5                 |        Lança uma exceção        |
-| 2 - válida  |           "3 2 5 * +"           |              21                 |
-| 2 - inválida|         "3 2 5 * + d -"         |        Lança uma exceção        |
-| 3 - válida  |      "5 1 2 + 4 × + 3 −"        |              14                 |
-| 3 - inválida|      "5 1 2 + 4 × + 3 −"        |              11                 |
+| 2 - inválida|               5                 |        Lança uma exceção        |
+| 3 - válida  |           "3 2 5 * +"           |              21                 |
+| 4 - inválida|         "3 2 5 * + d -"         |        Lança uma exceção        |
+| 5 - válida  |      "5 1 2 + 4 × + 3 −"        |              14                 |
+| 6 - inválida|      "5 1 2 + 4 × + 3 −"        |              11                 |
 
 #### Calculando
 |Próximo valor	|    Operação     	| Pilha  |
