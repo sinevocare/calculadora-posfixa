@@ -43,7 +43,7 @@
 - Receber uma string contendo uma expressão matemática em [notação polonesa reversa](https://pt.wikipedia.org/wiki/Notação_polonesa_inversa) e retornar o valor de resultado da expressão.
 
 - Exemplos
-"3 2 5 * +" => 21
+"3 2 5 + *" => 21
 
 ### Casos equivalentes
 | Entrada   |               Condição             |    Classes válidas               |         Classes inválidas        |
