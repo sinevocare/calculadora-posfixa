@@ -29,9 +29,27 @@
    1. desenvolver solução para os testes
    1. apresentar plano de teste e solução
 
-## Preparação para o plano de teste
+# Plano de teste
    - equipe ( [Yuri Jordan](https://github.com/Yuri-Jordan), [Thomas Nogueira](https://github.com/Thomas-Nogueira) )
-      - Java 8 com JUnit Versão [4.x](http://junit.org/junit4), IDE Netbeans 8.2, SO Windows 10.
+      - Java 8 com JUnit Versão [4](http://junit.org/junit4), IDE Netbeans 8.2, SO Windows 10.
       - plano de teste (bottom-up)
       - implementar os testes unitários
       - como executar teste
+## Identificação
+### Objetivo
+- Projetar testes uniários para uma terceira equipe implementar
+
+### Problema
+- Receber uma string contendo uma expressão matemática em [notação polonesa reversa](https://pt.wikipedia.org/wiki/Notação_polonesa_inversa) e retornar o valor de resultado da expressão.
+
+- Exemplos
+"3 2 5 * +" => 21
+
+### Casos equivalentes
+| Entrada   |               Condição             |    Classes válidas               |         Classes inválidas        |
+|-----------|------------------------------------|----------------------------------|----------------------------------|
+| polonesa  | É do tipo string.                  |(1) expressao(polonesa) == String |(4) expressao(polonesa) != String |
+|           | Dentro da string cada elemento é um número(s) inteiro com caractere(s) usados em expressões matemáticas: + - * /          |(2) polonesa = "3 2 5 * +"        |(5) polonesa = "3 2 5 * + d -"    |
+|           | A operação matemática RPN calculará a expressão da direita para à esquerda, verificando os caracteres matemáticos e operando em seguida.               |(3) polonesa = "3 2 5 * +" calculando = 3 * 2 + 5 |(6) polonesa = "3 2 5 * +" calculando = 3 2 5 * + |
+
+
