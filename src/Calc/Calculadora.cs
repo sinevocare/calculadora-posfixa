@@ -7,22 +7,22 @@ namespace calculadora_posfixa
     public static class Calculadora
     {
 
-        public static bool IsValid(dynamic exp)
+        public static bool IsValid(this object exp)
         {
             throw new NotImplementedException();
         }
 
-        public static int[] Operands(dynamic exp)
+        public static int[] Operands(this object exp)
         {
             throw new NotImplementedException();
         }
 
-        public static char[] Operators(dynamic exp)
+        public static char[] Operators(this object exp)
         {
             throw new NotImplementedException();
         }
 
-        public static double Eval(dynamic exp)
+        public static double Eval(this object exp)
         {
             throw new NotImplementedException();
         }
