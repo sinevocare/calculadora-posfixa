@@ -21,6 +21,11 @@ namespace Calc
 
         public static char[] Operators(this object exp)
         {
+            if (!(exp is string))
+            {
+                throw new ArgumentException();
+            }
+            
             return new char[1];
         }
 
