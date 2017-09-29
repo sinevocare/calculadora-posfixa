@@ -6,6 +6,11 @@ namespace Calc
     {
         public static bool IsValid(this object exp)
         {
+            if (!(exp is string))
+            {
+                throw new ArgumentException();
+            }
+            
             return true;
         }
 
