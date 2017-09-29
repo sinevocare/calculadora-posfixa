@@ -2,3 +2,5 @@
 /build/*
 /*.xml
 /*.mf
+*.iml
+.idea/

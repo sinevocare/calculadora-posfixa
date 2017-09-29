@@ -5,11 +5,10 @@
 import java.util.Stack;
 
 class CalculadoraPosFixa {
-
-    private Stack entradas;
+    private Stack<String> entradas;
 
     public CalculadoraPosFixa() {
-        entradas = new Stack();
+        entradas = new Stack<>();
     }
 
     public int getTamanho() {
@@ -22,24 +21,17 @@ class CalculadoraPosFixa {
 
     public void empilhar(String entrada) {
         this.entradas.push(entrada);
-
     }
 
     public String topo() {
-
-        return this.entradas.peek().toString();
-
+        return this.entradas.peek();
     }
 
     public String exibirExpressao() {
-      
         return String.join(" ", this.entradas);
     }
 
     public String resolverExpressao() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    
-
 }
