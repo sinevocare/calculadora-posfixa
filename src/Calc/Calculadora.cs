@@ -16,7 +16,7 @@ namespace Calc
 
         public static int[] Operands(this object exp)
         {
-            throw new NotImplementedException();
+            return new int[1];
         }
 
         public static char[] Operators(this object exp)
