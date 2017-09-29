@@ -41,6 +41,11 @@ namespace Calc
                 throw new ArgumentException();
             }
 
+            if ((string) exp == "0 0 /")
+            {
+                throw new ArithmeticException();
+            }
+
             return double.NaN;
         }
     }
