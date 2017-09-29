@@ -16,6 +16,11 @@ namespace Calc
 
         public static int[] Operands(this object exp)
         {
+            if (!(exp is string))
+            {
+                throw new ArgumentException();
+            }
+            
             return new int[1];
         }
 
