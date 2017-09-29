@@ -1,13 +1,10 @@
-
 using System;
 using Xunit;
 
-namespace calculadora_posfixa
+namespace Calc.Tests
 {
-
     public class CalculadoraTest
     {
-
         [Fact]
         public void Case1DoesntThrowArgumentException()
         {
@@ -116,7 +113,5 @@ namespace calculadora_posfixa
         {
             Assert.Equal(21.0, "3 2 5 + *".Eval(), 5);
         }
-
     }
-
 }

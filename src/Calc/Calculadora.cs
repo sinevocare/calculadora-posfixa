@@ -1,12 +1,9 @@
-
 using System;
 
-namespace calculadora_posfixa
+namespace Calc
 {
-
     public static class Calculadora
     {
-
         public static bool IsValid(this object exp)
         {
             throw new NotImplementedException();
@@ -24,9 +21,7 @@ namespace calculadora_posfixa
 
         public static double Eval(this object exp)
         {
-            throw new NotImplementedException();
+            return double.NaN;
         }
-
     }
-
 }
