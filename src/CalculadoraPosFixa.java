@@ -41,7 +41,7 @@ class CalculadoraPosFixa {
 
     public String exibirExpressao() {
         if (entradas.size() > 0 && entradas.firstElement().equals("+")) {
-            throw new CalculadoraPosFixaException("");
+            throw new CalculadoraPosFixaException("Entrada sem operandos.");
         }
 
         return String.join(" ", this.entradas);
@@ -54,6 +54,10 @@ class CalculadoraPosFixa {
             if (operadores.containsKey(token)) {
                 Integer ultimo = Integer.valueOf(tokens.pop());
                 Integer penultimo = Integer.valueOf(tokens.pop());
+
+                if (token.equals("/") && ultimo == 0) {
+                    throw new CalculadoraPosFixaException("Divisão por zero.");
+                }
 
                 tokens.push(operadores.get(token).apply(penultimo, ultimo).toString());
             } else {
