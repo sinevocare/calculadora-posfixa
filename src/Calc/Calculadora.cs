@@ -21,6 +21,11 @@ namespace Calc
 
         public static double Eval(this object exp)
         {
+            if (! (exp is string))
+            {
+                throw new ArgumentException();
+            }
+            
             return double.NaN;
         }
     }
