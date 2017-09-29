@@ -19,6 +19,7 @@ class CalculadoraPosFixa {
 
         operadores.put("+", (a, b) -> a + b);
         operadores.put("-", (a, b) -> a - b);
+        operadores.put("*", (a, b) -> a * b);
     }
 
     public int getTamanho() {
