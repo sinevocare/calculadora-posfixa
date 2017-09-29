@@ -21,7 +21,7 @@ namespace Calc
 
         public static char[] Operators(this object exp)
         {
-            throw new NotImplementedException();
+            return new char[1];
         }
 
         public static double Eval(this object exp)
