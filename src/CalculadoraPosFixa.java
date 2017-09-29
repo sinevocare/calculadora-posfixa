@@ -28,6 +28,10 @@ class CalculadoraPosFixa {
     }
 
     public String exibirExpressao() {
+        if (entradas.size() > 0 && entradas.firstElement().equals("+")) {
+            throw new CalculadoraPosFixaException("");
+        }
+
         return String.join(" ", this.entradas);
     }
 
