@@ -6,7 +6,7 @@ namespace Calc
     {
         public static bool IsValid(this object exp)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public static int[] Operands(this object exp)
