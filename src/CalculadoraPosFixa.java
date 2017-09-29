@@ -20,6 +20,7 @@ class CalculadoraPosFixa {
         operadores.put("+", (a, b) -> a + b);
         operadores.put("-", (a, b) -> a - b);
         operadores.put("*", (a, b) -> a * b);
+        operadores.put("/", (a, b) -> a.floatValue() / b);
     }
 
     public int getTamanho() {
