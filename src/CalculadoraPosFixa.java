@@ -18,6 +18,7 @@ class CalculadoraPosFixa {
         operadores = new HashMap<>();
 
         operadores.put("+", (a, b) -> a + b);
+        operadores.put("-", (a, b) -> a - b);
     }
 
     public int getTamanho() {
@@ -52,7 +53,7 @@ class CalculadoraPosFixa {
                 Integer ultimo = Integer.valueOf(tokens.pop());
                 Integer penultimo = Integer.valueOf(tokens.pop());
 
-                tokens.push(operadores.get(token).apply(ultimo, penultimo).toString());
+                tokens.push(operadores.get(token).apply(penultimo, ultimo).toString());
             } else {
                 tokens.push(token);
             }
