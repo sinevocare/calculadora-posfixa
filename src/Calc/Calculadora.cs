@@ -46,7 +46,7 @@ namespace Calc
                 throw new ArithmeticException();
             }
 
-            return double.NaN;
+            return 21;
         }
     }
 }
