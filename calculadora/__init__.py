@@ -6,14 +6,14 @@ Number = Union[int, float]
 class Analisador(object):
     @classmethod
     def eh_valida(cls, expressao: str) -> bool:
-        pass
+        return None
 
     @classmethod
     def tokenizar(cls, expressao: str) -> List[str]:
-        pass
+        return None
 
 
 class Avaliador(object):
     @classmethod
     def avaliar(cls, expressao: str) -> Number:
-        pass
+        return float('NaN')

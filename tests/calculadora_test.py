@@ -9,25 +9,25 @@ class AnalisadorTestCase(unittest.TestCase):
             Analisador.eh_valida(2)
     
     def test_caso_dois(self):
-        self.assertFalse(Analisador.eh_valida('23*'))
+        self.assertIs(False, Analisador.eh_valida('23*'))
     
     def test_caso_tres(self):
-        self.assertFalse(Analisador.eh_valida('2 + 3'))
+        self.assertIs(False, Analisador.eh_valida('2 + 3'))
     
     def test_caso_quatro(self):
-        self.assertFalse(Analisador.eh_valida('2 3 x'))
+        self.assertIs(False, Analisador.eh_valida('2 3 x'))
     
     def test_caso_cinco(self):
-        self.assertFalse(Analisador.eh_valida('2 3 4 +'))
+        self.assertIs(False, Analisador.eh_valida('2 3 4 +'))
     
     def test_caso_seis(self):
-        self.assertTrue(Analisador.eh_valida('2 3 +'))
+        self.assertIs(True, Analisador.eh_valida('2 3 +'))
     
     def test_caso_sete(self):
-        self.assertTrue(Analisador.eh_valida('3 2 5 + *'))
+        self.assertIs(True, Analisador.eh_valida('3 2 5 + *'))
     
     def test_caso_oito(self):
-        self.assertTrue(Analisador.eh_valida('3.1 1.1 +'))
+        self.assertIs(True, Analisador.eh_valida('3.1 1.1 +'))
         
     def test_caso_nove(self):
         with self.assertRaises(TypeError):
@@ -91,7 +91,7 @@ class AnalisadorTestCase(unittest.TestCase):
         self.assertEqual(21, Avaliador.avaliar('3 2 5 + *'))
 
     def test_caso_vinte_e_quatro(self):
-        self.assertEqual(4.2, Analisador.eh_valida('3.1 1.1 +'))
+        self.assertAlmostEqual(4.2, Avaliador.avaliar('3.1 1.1 +'), 7)
 
 
 if __name__ == '__main__':
